@@ -48,12 +48,14 @@ nav ul li a:hover {
 /* 011 */
 body > ul {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 1rem;
     padding: 0;
     list-style: none;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
+
 
 /* 013 */
 body > ul > li > a {
