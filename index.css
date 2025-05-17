@@ -1,0 +1,106 @@
+/* 001 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 001 */
+h1 {
+    text-align: center;
+    color: #005f99;
+}
+
+/* 001 */
+h2, h3 {
+    color: #005f99;
+    margin-left: 1.5rem;
+}
+
+/* 002 */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: #333;
+}
+
+/* 003 */
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+/* 004 */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+/* 014 */
+nav ul li a:hover {
+    background-color: #005f99;
+    border-radius: 0.25rem;
+}
+
+/* 011 */
+body > ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+    margin-top: 2rem;
+}
+
+/* 013 */
+body > ul > li > a {
+    display: inline-block;
+    height: 4rem;
+    min-width: 15rem;
+    line-height: 4rem;
+    background-color: #005f99;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3rem;
+    padding: 0.25rem 1rem;
+}
+
+/* 013 */
+body > ul > li > a:hover {
+    background-color: #003f66;
+}
+
+
+/* 001 */
+p {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+/* 001 */
+ol {
+    margin-right: 2.5rem;
+}
+
+/* 001 */
+img {
+    display: block;
+    margin: 2rem auto;
+    max-width: 90%;
+    height: auto;
+}
+
+/* 001 */
+a {
+    color: #005f99;
+}
+
+/* 011 */
+a:focus, a:hover {
+    outline: none;
+}
