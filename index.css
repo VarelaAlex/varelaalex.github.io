@@ -1,95 +1,119 @@
-/* 001 */
+/* Estructura base para que el footer se mantenga abajo */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f3;
     color: #333;
     line-height: 1.6;
 }
 
-/* 001 */
-h1 {
+/* Encabezado */
+header {
+    background-color: #003f66;
+    color: white;
+    padding: 1rem 0;
     text-align: center;
-    color: #005f99;
 }
 
-/* 001 */
-h2, h3 {
-    color: #005f99;
-    margin-left: 1.5rem;
-}
-
-/* 002 */
+/* Navegación */
 nav ul {
-    list-style-type: none;
-    text-align: center;
-    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #005f99;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-/* 003 */
 nav ul li {
-    display: inline;
-    margin-right: 1rem;
+    margin: 0.5rem;
 }
 
-/* 004 */
 nav ul li a {
     text-decoration: none;
     color: white;
+    background-color: #0077cc;
     padding: 0.5rem 1rem;
+    border-radius: 1rem;
     font-weight: bold;
-}
-
-/* 014 */
-nav ul li a:hover {
-    background-color: #005f99;
-    border-radius: 0.25rem;
-}
-
-/* 011 */
-body > ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 0;
-    list-style: none;
-    margin-top: 4rem;
-}
-
-
-/* 013 */
-body > ul > li > a {
     display: inline-block;
-    height: 4rem;
-    min-width: 15rem;
-    line-height: 4rem;
-    background-color: #005f99;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 3rem;
-    padding: 0.25rem 1rem;
+    transition: background-color 0.3s ease;
 }
 
-/* 013 */
-body > ul > li > a:hover {
+nav ul li a:hover {
     background-color: #003f66;
 }
 
-
-/* 001 */
-p {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+/* Contenido principal crece para empujar el footer abajo */
+main {
+    flex: 1;
 }
 
-/* 001 */
-ol {
-    margin-right: 2.5rem;
+/* Contenido del main */
+main section {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 0 1rem;
 }
 
-/* 001 */
+h2, h3 {
+    color: #005f99;
+}
+
+/* Lista de enlaces del main con más separación */
+main ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+main ul li a {
+    text-decoration: none;
+    background-color: #005f99;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    min-width: 200px;
+    text-align: center;
+}
+
+main ul li a:hover {
+    background-color: #003f66;
+}
+
+/* Pie de página */
+footer {
+    background-color: #003f66;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Enlaces generales */
+a {
+    color: #005f99;
+}
+
+a:focus, a:hover {
+    outline: none;
+}
+
+/* Imágenes */
 img {
     display: block;
     margin: 2rem auto;
@@ -97,12 +121,43 @@ img {
     height: auto;
 }
 
-/* 001 */
-a {
-    color: #005f99;
+/* Tarjetas de aficiones */
+main > section {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    width: 85%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 011 */
-a:focus, a:hover {
-    outline: none;
+main > h2 {
+    
+text-align: center;
+
+}
+
+main > section h3 {
+    color: #005f99;
+    margin-top: 0;
+}
+
+main > section p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+main > section ol {
+    padding-left: 1.5rem;
+    text-align: left;
+    color: #333;
+}
+
+main > section img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
