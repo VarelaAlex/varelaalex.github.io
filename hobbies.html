@@ -17,11 +17,12 @@
             a.appendChild(r);
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
+    <script src="search.js"></script>
 </head>
 
 <body>
 
-   <header>
+    <header>
         <h1>Alejandro Álvarez Varela</h1>
         <nav>
             <ul>
@@ -33,7 +34,20 @@
         </nav>
     </header>
 
+    <section>
+        <form role="search">
+            <label for="buscar">Buscar:</label>
+            <input type="search" name="buscar" placeholder="Escribe una palabra clave">
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
     <main>
+        <section hidden>
+            <h3>Resultados</h3>
+            <ul></ul>
+        </section>
+
         <h2>Aficiones</h2>
 
         <section>
@@ -139,7 +153,7 @@
         </section>
     </main>
 
-     <footer>
+    <footer>
         <p>&copy; 2025 Alejandro Álvarez Varela</p>
     </footer>
 

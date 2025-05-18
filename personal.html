@@ -7,16 +7,17 @@
     <title>Página personal de Alejandro Álvarez Varela</title>
     <link rel="stylesheet" href="index.css">
     <!-- Hotjar Tracking Code for UX -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:6406820,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments); };
+            h._hjSettings = { hjid: 6406820, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <script src="search.js"></script>
 </head>
 
 <body>
@@ -33,14 +34,32 @@
         </nav>
     </header>
 
+    <section>
+        <form role="search">
+            <label for="buscar">Buscar:</label>
+            <input type="search" name="buscar" placeholder="Escribe una palabra clave">
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
     <main>
+        <section hidden>
+            <h3>Resultados</h3>
+            <ul></ul>
+        </section>
+
         <h2>Información personal</h2>
 
         <section>
             <img src="public/yo.jpeg" alt="Fotografía de Alejandro" />
-            <p>👨🏻‍🎓 Soy estudiante del Máster en Ingeniería Web en la Escuela de Ingeniería Informática de la Universidad de Oviedo.</p>
-            <p>Soy ingeniero de software especializado en Programación Orientada a Objetos con experiencia en Java. Actualmente, estoy profundizando en el desarrollo de aplicaciones web y bases de datos. Trabajo con entusiasmo en proyectos en equipo, buscando siempre aprender y mejorar mis habilidades técnicas.</p>
-            <p>Me considero una persona curiosa y entusiasta, comprometida con la creación de un entorno de trabajo colaborativo y en constante búsqueda de soluciones innovadoras. Mi objetivo es seguir avanzando en la investigación y contribuir con nuevas ideas al ámbito de la ingeniería web.</p>
+            <p>👨🏻‍🎓 Soy estudiante del Máster en Ingeniería Web en la Escuela de Ingeniería Informática de la
+                Universidad de Oviedo.</p>
+            <p>Soy ingeniero de software especializado en Programación Orientada a Objetos con experiencia en Java.
+                Actualmente, estoy profundizando en el desarrollo de aplicaciones web y bases de datos. Trabajo con
+                entusiasmo en proyectos en equipo, buscando siempre aprender y mejorar mis habilidades técnicas.</p>
+            <p>Me considero una persona curiosa y entusiasta, comprometida con la creación de un entorno de trabajo
+                colaborativo y en constante búsqueda de soluciones innovadoras. Mi objetivo es seguir avanzando en la
+                investigación y contribuir con nuevas ideas al ámbito de la ingeniería web.</p>
         </section>
     </main>
 
