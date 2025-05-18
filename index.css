@@ -20,6 +20,11 @@ header {
     color: white;
     padding: 1rem 0;
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 /* Navegación */
@@ -55,6 +60,7 @@ nav ul li a:hover {
 /* Contenido principal crece para empujar el footer abajo */
 main {
     flex: 1;
+    margin-top: 13rem; 
 }
 
 /* Contenido del main */
