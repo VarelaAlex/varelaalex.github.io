@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     const item = document.createElement("li");
                     const enlace = document.createElement("a");
                     enlace.href = pagina.url;
-                    enlace.textContent = `Coincidencia en: ${pagina.nombre}`;
+                    enlace.textContent = `${pagina.nombre}`;
                     item.appendChild(enlace);
                     lista.appendChild(item);
                     coincidencias++;
