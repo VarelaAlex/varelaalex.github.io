@@ -1,9 +1,11 @@
+/*002*/ 
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
+/*001*/ 
 body {
     display: flex;
     flex-direction: column;
@@ -13,6 +15,7 @@ body {
     line-height: 1.6;
 }
 
+/*001*/ 
 header {
     background-color: #003f66;
     color: white;
@@ -25,6 +28,7 @@ header {
     z-index: 1000;
 }
 
+/*002*/ 
 nav ul {
     list-style: none;
     padding: 0;
@@ -35,10 +39,12 @@ nav ul {
     flex-wrap: wrap;
 }
 
+/*003*/ 
 nav ul li {
     margin: 0.5rem;
 }
 
+/*004*/ 
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -50,14 +56,17 @@ nav ul li a {
     transition: background-color 0.3s ease;
 }
 
+/*004*/ 
 nav ul li a:hover {
     background-color: #003f66;
 }
 
+/*001*/ 
 main {
     flex: 1;
 }
 
+/*002*/ 
 main section {
     max-width: 800px;
     margin: 2rem auto;
@@ -65,10 +74,12 @@ main section {
     padding: 0 1rem;
 }
 
+/*001*/ 
 h2, h3 {
     color: #005f99;
 }
 
+/*002*/ 
 main ul {
     list-style: none;
     padding: 0;
@@ -79,6 +90,7 @@ main ul {
     align-items: center;
 }
 
+/*003*/ 
 main ul li a {
     text-decoration: none;
     background-color: #005f99;
@@ -91,10 +103,12 @@ main ul li a {
     text-align: center;
 }
 
+/*003*/ 
 main ul li a:hover {
     background-color: #003f66;
 }
 
+/*001*/ 
 footer {
     background-color: #003f66;
     color: white;
@@ -102,14 +116,17 @@ footer {
     padding: 1rem 0;
 }
 
+/*001*/ 
 a {
     color: #005f99;
 }
 
+/*002*/ 
 a:focus, a:hover {
     outline: none;
 }
 
+/*001*/ 
 img {
     display: block;
     margin: 2rem auto;
@@ -117,6 +134,7 @@ img {
     height: auto;
 }
 
+/*002*/ 
 main > section {
     background-color: white;
     border-radius: 1rem;
@@ -128,28 +146,31 @@ main > section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/*002*/ 
 main > h2 {
-    
-text-align: center;
-
+    text-align: center;
 }
 
+/*003*/ 
 main > section h3 {
     color: #005f99;
     margin-top: 0;
 }
 
+/*003*/ 
 main > section p {
     font-size: 1.1rem;
     color: #444;
 }
 
+/*003*/ 
 main > section ol {
     padding-left: 1.5rem;
     text-align: left;
     color: #333;
 }
 
+/*003*/ 
 main > section img {
     max-width: 200px;
     border-radius: 50%;
@@ -157,6 +178,7 @@ main > section img {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/*002*/ 
 form[role="search"] {
     display: flex;
     justify-content: center;
@@ -167,6 +189,7 @@ form[role="search"] {
     padding: 1rem;
 }
 
+/*003*/ 
 form[role="search"] input[type="search"] {
     flex: 1;
     padding: 0.75rem 1rem;
@@ -176,6 +199,7 @@ form[role="search"] input[type="search"] {
     width: 100%;
 }
 
+/*003*/ 
 form[role="search"] button {
     padding: 0.75rem 1.5rem;
     background-color: #0077cc;
@@ -187,11 +211,12 @@ form[role="search"] button {
     transition: background-color 0.3s ease;
 }
 
+/*003*/ 
 form[role="search"] button:hover {
     background-color: #005f99;
 }
 
-
+/*004*/
 main > section > ul {
     list-style: none;
     padding: 0;
@@ -202,6 +227,7 @@ main > section > ul {
     align-items: center;
 }
 
+/*005*/ 
 main > section > ul > li {
     padding: 1rem 2rem;
     border-radius: 1rem;
@@ -210,6 +236,7 @@ main > section > ul > li {
     width: 90%;
 }
 
+/*006*/ 
 main > section > ul > li > a:hover {
     text-decoration: underline;
 }
